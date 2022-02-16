@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: 
+#fff;
+}
+
+body {
+    background-image: url(https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/slider.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 1200px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* SOCIALS */ 
+
+aside {
+    position: fixed;
+    top: 15%;
+    left: 30px;
+}
+
+aside div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: 
+#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+aside div:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+aside div.tw {
+    background-color: 
+#2cabe2;
+}
+
+aside div.fb {
+    background-color: 
+#3c5a9a;
+}
+
+aside div.ig {
+    background-color: 
+#ea4921;
+}
+
+aside div.gp {
+    background-color: 
+#bf3526;
+}
+
+aside div.pt {
+    background-color: 
+#c91f27;
+}
+
+aside div.sh {
+    background-color: 
+#1e8854;
+}
+
+/* HEADER */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+header img {
+    width: 130px;
+}
+
+header nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+header nav a i {
+    margin-right: 10px;
+}
+
+/* MOBILE NAV */ 
+
+.mobile-nav {
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    background: 
+rgba(255, 166, 0, 0.884);
+    padding-top: 100px;
+    text-align: center;
+    top: 0;
+    right: -100%;
+    transition: right 0.8s;
+}
+
+.mobile-nav.visible {
+    right: 0;
+}
+
+.mobile-nav .close {
+    color: 
+#333;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mobile-nav a {
+    color: 
+#333;
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.mobile-nav a i {
+    color: 
+#333;
+    margin-right: 10px;
+}
+
+/* MAIN */ 
+
+main .container {
+    background-color: 
+#333333b8;
+    min-height: 800px;
+    padding: 40px 40px 20px 40px;
+    margin-top: 30px;
+}
+
+main .container h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+main .container h2 i {
+    margin-right: 10px;
+}
+
+main .container .grid {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main .container article {
+    background: 
+#000;
+    width: 32%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main .container article .image {
+    background-size: cover;
+    background-position: center;
+    padding-top: 150%;
+}
+
+main .container article#item1 .image {
+    background-image: url(../images/item47.jpg);
+}
+
+main .container article#item2 .image {
+    background-image: url(../images/ironman3.jpg);
+}
+
+main .container article#item3 .image {
+    background-image: url(../images/cmarvel.jpg);
+}
+
+main .container article#item4 .image {
+    background-image: url(../images/bw.jpg);
+}
+
+main .container article#item5 .image {
+    background-image: url(../images/sc.jpg);
+}
+
+main .container article#item6 .image {
+    background-image: url(../images/thor.jpg);
+}
+
+main .container article h3 {
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+
+main .container article .add {
+    display: inline-block;
+    margin-top: 20px;
+    background: 
+#e99822;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+main .container article .add.focus {
+    background: 
+green;
+}
+
+main .container article .trailer {
+    display: inline-block;
+    margin-top: 20px;
+    background: 
+blue;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+main .container article a i {
+    margin-right: 10px;
+}
+
+/* FIXED ELEMENTS */ 
+
+.blackBg {
+    background: 
+rgba(51, 51, 51, 0.774);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.videoContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* FILTERS */
+
+.filters {
+    margin-top: 20px;
+}
+
+.filters div {
+    display: inline-block;
+    background: 
+#fff;
+    color: 
+#333;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.filters div a {
+    color: 
+#333;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */ 
+
+@media (max-width: 1400px) {
+    aside {
+        position: static;
+        margin-bottom: 40px;
+    }
+    aside div {
+        display: inline-flex;
+    }
+}
+
+/* Quand la taille de l'écran est inférieur à 1240px, le CSS dans la media query s'active */
+@media (max-width: 1240px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    header nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    main .container article {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    main .container article {
+        width: 100%;
+    }
+}
